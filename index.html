@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="index.html" method="POST">
+        <fieldset>
+            <legend>Personal</legend>
+            <label for="titel">Titel:</label>
+            <input type="text" name="titel" id="titel" placeholder="Dr. Who" required>
+            <br>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="David" required> 
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName" placeholder="Tennant" required>
+            <br>
+            
+            <input type="Radio" name="gender" id='genderMale' value="Male" checked>
+            <label for="genderMale">Male;</label>
+            <input type="Radio" name="gender" id='genderFemale' value="Female">
+            <label for="genderMale">Female</label>
+            <br>
+            <label for="language1">Language: </label>
+            <input type="Radio" name="language" id= 'language1' value="English" checked>English
+            <input type="Radio" name="language" value="German">German
+            <input type="Radio" name="language" value="French">French
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone" required>
+            <br>
+            <label for="cellphone">Cellphone: </label>
+            <input type="tel" name="cellphone" id="cellphone" placeholder='optional'>
+            <br>
+            <label for="mainPhone">Main Phone: </label>
+            <input type="tel" name="mainPhone" id="mainPhone" placeholder='optional'>
+            <br>
+            <label for="fax">Fax: </label>
+            <input type="tel" name="fax" id="fax" placeholder='optional'>
+            <br>
+            <label for="userEmail">Email 1:</label>
+            <input type="email" name="userEmail" id="userEmail" required>
+            <br>
+            <label for="emailOptional">Email 2:</label>
+            <input type="email" name="emailOptional" id="emailOptional" placeholder="optional">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Address Info</legend>
+            <label for="userPhone">User Phone: </label>
+            <input type="tel" name="userPhone" id="userPhone" required>
+            <br>
+            <label for="additionalCompany">Additional Company: </label>
+            <input type="text" name="additionalCompany" id="additionalCompany">
+            <br>
+            <label for="homepage">Homepage: </label>
+            <input type="url" name="homepage" id="homepage">
+            <br>
+            <label for="address">Address </label>
+            <label for="houseNumber">/ Nr.: </label>
+            <input type="text" name="address" id="address" placeholder="Musterstrasse" required>
+            <input type="number" name="houseNumber" id="houseNumber" placeholder="01" required>
+            <br>
+            <label for="additionAddress">Additional Address: </label>
+            <input type="text" name="additionAddress" id="additionAddress" placeholder="optional">
+            <br>
+            <label for="postfach">Postfach: </label>
+            <input type="number" name="postfach" id="postfach" placeholder='optional'>
+            <br>
+            <label for="kanton">Kanton </label>
+            <label for="land">/Land: </label>
+            <input type="text" name="kanton" id="kanton" placeholder='ZH' required>
+            <input type="text" name="land" id="land" placeholder='Switzerland' required>
+        </fieldset>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
